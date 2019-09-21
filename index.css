@@ -1,0 +1,128 @@
+/*
+  Name: Sijia Xiao (Lena)
+  Date: Oct. 29, 2018
+  Section: CSE 154 AE
+  This CSS file will add styles to the former html file. It contains
+  the color, text-font, paddings, margins, etc.
+
+            ~~~~~~~~~~~~~~~~~
+          /                  \    |- - - -|
+        /    ( * )            \   |  +  | |
+      /                        \  |_____| |
+     +____________________________________|
+*/
+
+h1 {
+  text-align: center;
+  margin: 0;
+  color: white;
+  background-color: #26579b;
+  padding: 60px;
+  margin-bottom: 30px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+}
+
+form, #output {
+  width: 50%;
+  height: auto;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+}
+
+form {
+  width: 30%;
+  text-align: right;
+}
+
+#quality {
+  -webkit-appearance: none;
+  border-radius: 0px;
+  background: white;
+  border-color: lightgrey;
+  font-size: 15px;
+  padding: 6px 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 222px;
+}
+
+input[type=text], input[type=button] {
+  padding: 6px 10px;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 200px;
+  border: 1px solid lightgrey;
+}
+
+input[type=button] {
+  width: 120px;
+  border-color: lightgrey;
+  padding: 10px;
+  transition-duration: 0.2s;
+}
+
+input[type=button]:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.flexIt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th{
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+#note {
+  margin-top: 30px;
+  font-size: 12px;
+  color: grey;
+}
+
+#copywrite {
+  background-color: #26579b;
+  color: white;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+#copywrite p {
+  text-align: center;
+  font-size: 13px;
+}
+
+footer img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+#lnk {
+  color: white;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+  Name: Sijia Xiao (Lena)
+  Date: Oct. 29, 2018
+  Section: CSE 154 AE
+  This html file provide the structure for the summary of guitar chord.
+  It also contains region for user input.
+
+            ~~~~~~~~~~~~~~~~~
+          /                  \    |- - - -|
+        /    ( * )            \   |  +  | |
+      /                        \  |_____| |
+     +____________________________________|
+-->
+
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Guitar Corner</title>
+    <link href="index.css" rel='stylesheet' />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>Guitar Chord</h1>
+    <div id='container'>
+      <form>
+        <div>
+          <label>Root:</label>
+          <input type='text' name='root' class='valid' />
+        </div>
+        <div>
+          <label>Quality:</label>
+          <select id='quality' name='quality'>
+            <option value=''>None</option>
+            <option value='maj'>Major</option>
+            <option value='m'>Minor</option>
+            <option value='aug'>Augmented</option>
+            <option value='dim'>Diminished</option>
+          </select>
+        </div>
+        <div>
+          <label>Tension:</label>
+          <input type='text' name='tension' class='valid' />
+        </div>
+        <div>
+          <label>Bass:</label>
+          <input type='text' name='bass' class='valid' />
+        </div>
+        <div><input type='button' name='search-all' value='Search All' /></div>
+        <div><input type='button' name='search-one' value='Search Exact' /></div>
+        <p id='note'>Note: B/Cb, G#/Ab, F#/Gb, D#/Eb, C#/Db, A#/Bb are equivalent.</p>
+      </form>
+      <div id='output' class='flexIt'>
+        <img src='nodeDes.png' alt='node-description' />
+      </div>
+    </div>
+    <footer id="copywrite">
+      <p>API used in this page from <a href="https://api.uberchord.com/v1/chords" id='lnk'>Uber Chord</a>
+        || All text and images in this website &copy; Lena Xiao 2018
+      <img src="logo.png" alt="Logo" /></p>
+    </footer>
+  </body>
+</html>
